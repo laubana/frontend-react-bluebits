@@ -72,3 +72,8 @@ export const CardWrapper = styled.div`
   flex-direction: column;
   gap: 16px;
 `;
+
+export const MapWrapper = styled.div`
+  aspect-ratio: 1;
+  width: 100%;
+`;
