@@ -4,6 +4,8 @@ import { Footer, Header, Main } from "./Layout.style";
 import { Outlet } from "react-router-dom";
 
 const LayoutComponent = (props: LayoutProps): JSX.Element => {
+  const {} = props;
+
   return (
     <>
       <Header></Header>
