@@ -1,4 +1,4 @@
-export type Coloring = "red";
+export type Coloring = "orange";
 export type Status = "pending";
 
 export interface LabelProps {

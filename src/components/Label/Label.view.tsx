@@ -7,8 +7,12 @@ const LabelComponent = (props: LabelProps): JSX.Element => {
   const { status } = props;
 
   return (
-    <Container coloring={status === "pending" ? "red" : "red"}>
-      <Text coloring="red" variant="titleMd" style={{ fontWeight: 700 }}>
+    <Container coloring={status === "pending" ? "orange" : "orange"}>
+      <Text
+        coloring={status === "pending" ? "orange" : "orange"}
+        variant="titleMd"
+        style={{ fontWeight: 700 }}
+      >
         {`${status.slice(0, 1).toUpperCase()}${status.slice(1)}`}
       </Text>
     </Container>

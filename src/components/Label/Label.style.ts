@@ -3,9 +3,9 @@ import styled from "@emotion/styled";
 import { Coloring } from "./Label.props";
 
 const colorings: Record<Coloring, string> = {
-  red: `        
-        background-color: rgba(234, 84, 85, 0.15);
-    `,
+  orange: `        
+    background-color: #FFEBCD;
+  `,
 };
 
 export const Container = styled.div<{
