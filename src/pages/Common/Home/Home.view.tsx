@@ -40,7 +40,12 @@ const HomeView = (props: HomeProps) => {
           <Label status="pending" />
         </TitleWrapper>
         <AdWrapper>
-          <Ad />
+          <Ad
+            imageUrls={[
+              "https://picsum.photos/200?random=1",
+              "https://picsum.photos/200?random=2",
+            ]}
+          />
         </AdWrapper>
         <Divider />
         <DetailWrapper>
