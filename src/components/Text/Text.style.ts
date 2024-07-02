@@ -34,6 +34,9 @@ const colors: Record<Coloring, string> = {
   grey: `
     color: #9397A5;
   `,
+  orange: `
+    color: #FF8C00;
+  `,
   white: `
     color: #FFFFFF;
   `,
