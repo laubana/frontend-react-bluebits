@@ -13,6 +13,7 @@ import {
   DetailFooter,
   DetailFooterContent,
   CardWrapper,
+  MapWrapper,
 } from "./Home.style";
 import { ChevronLeft, Copy, Create, Unit } from "../../../components/SVG";
 import Ad from "../../../components/Ad";
@@ -22,6 +23,7 @@ import Divider from "../../../components/Divider";
 import Label from "../../../components/Label";
 import StatusBar from "../../../components/StatusBar";
 import Text from "../../../components/Text";
+import Map from "../../../components/Map";
 
 const HomeView = (props: HomeProps) => {
   const {} = props;
@@ -57,6 +59,12 @@ const HomeView = (props: HomeProps) => {
             </DeliverInfoWrapper>
           </DetailBody>
         </DetailWrapper>
+        <MapWrapper>
+          <Map
+            location={{ latitude: 49.231725, longitude: -123.008591 }}
+            markers={[{ latitude: 49.231725, longitude: -123.008591 }]}
+          />
+        </MapWrapper>
         <DetailFooter>
           <DetailFooterContent>
             <Text variant="titleSm">Pick-up Code</Text>
