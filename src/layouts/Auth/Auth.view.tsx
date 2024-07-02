@@ -9,6 +9,8 @@ import { useRefreshMutation } from "../../slices/authApiSlice";
 import { selectAccessToken, setAuth } from "../../slices/authSlice";
 
 const ProtectComponent = (props: ProtectProps): JSX.Element => {
+  const {} = props;
+
   const [refresh] = useRefreshMutation();
   const dispatch = useDispatch<typeof store.dispatch>();
 
