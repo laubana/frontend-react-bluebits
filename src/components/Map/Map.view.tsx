@@ -53,7 +53,7 @@ const MapComponent = (props: MapProps): JSX.Element => {
               <Marker
                 latitude={locationMapItem.latitude}
                 longitude={locationMapItem.longitude}
-                color="crimson"
+                color="#4D81E7"
                 key={locationMapIndex}
               />
             ))}
