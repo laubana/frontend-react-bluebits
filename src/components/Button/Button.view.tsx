@@ -4,10 +4,11 @@ import { Button } from "./Button.style";
 import Text from "../Text";
 
 const ButtonComponent = ({
-  sizing = "medium",
-  coloring = "blue",
   block,
+  coloring = "blue",
+  leftComponent,
   onClick,
+  sizing = "medium",
   text,
 }: ButtonProps): JSX.Element => {
   return (
@@ -18,7 +19,12 @@ const ButtonComponent = ({
       block={block}
       onClick={onClick}
     >
-      <Text coloring="white" variant="titleMd" style={{ fontWeight: 500 }}>
+      {leftComponent && leftComponent}
+      <Text
+        coloring={coloring === "blue" ? "white" : "blue"}
+        variant="titleMd"
+        style={{ fontWeight: 500 }}
+      >
         {text}
       </Text>
     </Button>

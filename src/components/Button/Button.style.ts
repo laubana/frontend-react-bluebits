@@ -16,10 +16,14 @@ const paddingSizes: Record<Sizing, string> = {
 
 const colorings: Record<Coloring, string> = {
   blue: `        
-        background-color: #4D81E7;
-        box-shadow: 0 4px 10px 0 rgba(76, 144, 239, 0.35); 
-        color:#FFFFFF;
+    background-color: #4D81E7;
+    border: 0;
+    box-shadow: 0 4px 10px 0 rgba(76, 144, 239, 0.35); 
     `,
+  transparent: `
+    background-color: #FFFFFF;
+    border: 1px solid #4D81E7;
+  `,
 };
 
 export const Button = styled.button<{
@@ -33,10 +37,11 @@ export const Button = styled.button<{
   ${({ sizing: size }) => fontSizes[size]};
   align-items: center;
   border-radius: 69px;
-  border: 0;
   cursor: pointer;
   display: flex;
   justify-content: center;
-  padding: 15px;
+  gap: 16px;
+  padding: 16px;
   white-space: nowrap;
+  overflow: hidden;
 `;

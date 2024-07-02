@@ -1,10 +1,13 @@
+import { ReactNode } from "react";
+
 export type Sizing = "medium";
-export type Coloring = "blue";
+export type Coloring = "blue" | "transparent";
 
 export interface ButtonProps {
   block?: boolean;
-  onClick?: () => void;
-  text?: string;
-  sizing?: Sizing;
   coloring?: Coloring;
+  leftComponent?: ReactNode;
+  onClick?: () => void;
+  sizing?: Sizing;
+  text?: string;
 }
