@@ -6,7 +6,7 @@ import {} from "./Protect.style";
 import { selectAccessToken } from "../../slices/authSlice";
 
 const ProtectComponent = (props: ProtectProps): JSX.Element => {
-  const { allowedRoles } = props;
+  const {} = props;
 
   const location = useLocation();
 
