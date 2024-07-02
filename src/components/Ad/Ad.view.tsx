@@ -2,14 +2,19 @@ import React from "react";
 import { AdProps } from "./Ad.props";
 import { Container, Image } from "./Ad.style";
 import Text from "../Text";
+import Carousel from "../Carousel";
 
 const AdComponent = (props: AdProps): JSX.Element => {
-  const { imageUrl } = props;
+  const { imageUrls } = props;
 
   return (
     <Container>
-      {imageUrl ? (
-        <Image src={imageUrl} />
+      {imageUrls ? (
+        <Carousel
+          items={imageUrls.map((imageUrl) => (
+            <Image src={imageUrl} />
+          ))}
+        />
       ) : (
         <Text
           style={{
