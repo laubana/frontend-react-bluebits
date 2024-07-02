@@ -13,11 +13,12 @@ import {
   DetailFooter,
   DetailFooterContent,
   CardWrapper,
+  ButtonWrapper,
 } from "./Home.style";
 import { ChevronLeft, Copy, Create, Unit } from "../../../components/SVG";
 import Ad from "../../../components/Ad";
 import Button from "../../../components/Button";
-import Card from "../../../components/Card";
+// import Card from "../../../components/Card";
 import Divider from "../../../components/Divider";
 import Label from "../../../components/Label";
 import StatusBar from "../../../components/StatusBar";
@@ -85,7 +86,28 @@ const HomeView = (props: HomeProps) => {
         <Button block text="Unlock Compartment" />
         <Divider />
         <CardWrapper>
-          <Card
+          <ButtonWrapper>
+            <Button
+              leftComponent={<Unit />}
+              coloring="transparent"
+              text="Residential Unit Registration"
+            />
+            <Text coloring="grey" variant="body">
+              Register your unit with BlueBox to enable delivery by unit
+              feature.
+            </Text>
+          </ButtonWrapper>
+          <ButtonWrapper>
+            <Button
+              leftComponent={<Create />}
+              coloring="transparent"
+              text="Create a support ticket"
+            />
+            <Text coloring="grey" variant="body">
+              Submit a support ticket form to us.
+            </Text>
+          </ButtonWrapper>
+          {/* <Card
             content="Register your unit with BlueBox to enable delivery by unit feature."
             icon={<Unit />}
             title="Residential Unit Registration"
@@ -94,7 +116,7 @@ const HomeView = (props: HomeProps) => {
             content="Submit a support ticket form to us."
             icon={<Create />}
             title="Create a support ticket"
-          />
+          /> */}
         </CardWrapper>
       </Wrapper>
     </Container>

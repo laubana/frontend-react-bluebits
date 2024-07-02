@@ -72,3 +72,9 @@ export const CardWrapper = styled.div`
   flex-direction: column;
   gap: 16px;
 `;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+`;
